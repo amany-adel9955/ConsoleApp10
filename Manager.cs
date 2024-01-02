@@ -15,5 +15,10 @@ namespace ConsoleApp10
         public string ProjectName { get; set; }
 
         public List<int> NewList { get; set; }
+
+        public Manager(int id)
+        {
+            this.Id = id;
+        }
     }
 }

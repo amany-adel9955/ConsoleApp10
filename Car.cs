@@ -4,33 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConsoleApp10
 {
     internal class Car
     {
+        public string Make { get; set; }
         public string Model { get; set; }
-        public string Color { get; set; }
-        public int Doors { get; set; }
-        public Engine Engine { get; set; }
+        public decimal Price { get; set; }
+
         public Car()
         {
-            Model = "Volvo";
-            Color = "Black";
-            Doors = 4;
-            Engine = null;
+            Make = "nothing yet";
+            Model = "nothing yet";
+            Price = 0.00m;
         }
-        public Car(string model , string color, int doors,Engine engine)
+        public Car(string make , string model , decimal price)
         {
+            this.Make = make;
             this.Model = model;
-            this.Color = color;
-            this.Doors = doors;
-            this.Engine = engine;
+            this.Price = price;
 
         }
         public void PrintData()
         {
             
-            Console.WriteLine(Model + Color + Doors + Engine);
+            
         }
 
     }
